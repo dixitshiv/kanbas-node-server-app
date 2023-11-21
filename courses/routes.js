@@ -1,4 +1,4 @@
-import Database from "../Database/courses.json";
+import Database from "../Database/courses.mjs";
 function CourseRoutes(app) {
   app.get("/api/courses/:id", (req, res) => {
     const { id } = req.params;
