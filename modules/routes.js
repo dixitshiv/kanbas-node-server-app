@@ -1,4 +1,4 @@
-import db from "../Database/modules.json" assert { type: "json" };
+import db from "../Database/index.js";
 function ModuleRoutes(app) {
   app.post("/api/courses/:cid/modules", (req, res) => {
     const { cid } = req.params;
